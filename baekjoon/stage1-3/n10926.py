@@ -8,3 +8,14 @@
 출력
 첫째 줄에 준하의 놀람을 출력한다. 놀람은 아이디 뒤에 ??!를 붙여서 나타낸다.
 '''
+# 제출
+# print(input() + "??!")
+
+id_list = ['joonas']
+
+id = input()
+if id in id_list:
+    print(id + '??!')
+else:
+    id_list.append(id)
+    print(id_list)
