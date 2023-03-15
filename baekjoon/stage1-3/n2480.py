@@ -20,8 +20,12 @@ a, b, c = map(int, input().split())
 if (a == b) and (b == c):
     print("같은 눈 3개")
     print(10000 + a * 1000)
-if (a != b) and (a != c) and (b != c):
+elif (a != b) and (a != c) and (b != c):
     print("모두 다른 눈")
-    print(1000 + max(a,b,c) * 100)
+    print(max(a,b,c) * 100)
 else:
     print("같은 눈 2개")
+    if (a == b) or (a == c):
+        print(1000 + a * 100)
+    else: # (b == c)
+        print(1000 + b * 100)
