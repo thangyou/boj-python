@@ -1,11 +1,13 @@
 # 메모리 초과
 import sys
 
-input = sys.stdin.readline
-N = int(input())
-arr = list([int(input()) for _ in range(N)])
+N = int(sys.stdin.readline())
+arr = [0] * 10001
 
+for _ in range(N):
+  arr[int(sys.stdin.readline())] += 1
 
-
-for i in arr:
-  print(i)
+for i in range(10001):
+  if arr[i] != 0:
+    for j in range(arr[i]):
+      print(i)
