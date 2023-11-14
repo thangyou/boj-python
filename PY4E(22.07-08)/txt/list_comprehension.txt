@@ -1,0 +1,16 @@
+* 리스트를 쉽게, 짧게 한 줄로 만들 수 있는 Python의 문법
+
+size = 10
+arr = [0] * size
+for i in range(len(size)):
+  print(arr[i] = i * 2)
+
+-> [ (변수를 활용한 값) for (사용할 변수 이름) in (iterable)]
+size = 10
+arr = [ i * 2 for i in range(size) ]
+# 선언과 할당이 한 줄로 수행
+print(arr)
+
+new_arr = [ n * n for n in arr ]
+
+출처 : https://shoark7.github.io/programming/python/about-list-comprehension-python
